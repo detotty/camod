@@ -1,0 +1,96 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Theme Service CSS
+----------------------------------------*/
+.service-section {
+    padding: 105px 0 100px 0;
+    @media #{$md} {
+        padding: 50px 0;
+    }
+    @media #{$sm} {
+        padding: 35px 0;
+    }
+    .section-heading {
+        .section-title {
+            margin-bottom: 30px;
+        }
+    }
+    .service-item {
+        @media #{$md} {
+            padding: 0 15px;
+        }
+        .service-icon {
+            color: var(--tj-color-theme-primary);
+            font-size: 75px;
+            height: 75px;
+            width: 75px;
+            line-height: 1;
+            display: inline-block;
+            transform: rotateY(0deg);
+            transition: 0.6s all ease-in-out;
+        }
+        .service-item-title {
+            margin: 25px 0 25px 0;
+            line-height: 1;
+        }
+        p {
+            margin-bottom: 0;
+        }
+        &:hover .service-icon {
+            transform: rotateY(360deg);
+        }
+    }
+}
+
+// Service Two //
+.service-2 {
+    padding: 105px 0;
+    @media #{$md} {
+        padding: 55px 0;
+    }
+    @media #{$sm} {
+        padding: 35px 0;
+    }
+    .section-heading {
+        .section-title {
+            line-height: 1.2;
+        }
+    }
+    .service-item {
+        position: relative;
+        z-index: 1;
+        padding: 60px 18px;
+        border: 1px solid var(--tj-color-theme-primary);
+        overflow: hidden;
+        .service-thumb {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.3s ease-in-out;
+            visibility: hidden;
+            opacity: 0;
+            z-index: -1;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: all 0.3s ease-in-out;
+            visibility: hidden;
+            opacity: 0;
+            z-index: -1;
+        }
+        &:hover .overlay,
+        &:hover .service-thumb {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+/* !END: Theme Service CSS */

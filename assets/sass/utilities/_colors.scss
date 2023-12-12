@@ -1,0 +1,43 @@
+$colors: (
+    common: (
+        white: #ffffff,
+        black: #000000,
+    ),
+    heading: (
+        primary: #343a40,
+    ),
+    text: (
+        body: #cfcfcf,
+    ),
+    theme: (
+        primary: #bd8c62,
+        bg-dark: #222326,
+        bg-dark-2: #0e1013,
+        bg-dark-light: #2b2c30,
+        bg-dark-light-2: #1e1f21,
+        bg-dark-deep: #1a1b1d,
+        bg-dark-deep-2: #181d24,
+        bg-primary-blur: rgba(189, 140, 98, 0.2),
+    ),
+    grey: (
+        1: #c5c5c5,
+        2: #aeaeae,
+        3: #acacac,
+        4: #999999,
+        5: #f7f7f7,
+        6: #b7b7b7,
+        7: #a6aeb5,
+        8: #edf2f6,
+        9: #ddd,
+        10: #c0c0c0,
+    ),
+    border: (
+        1: #ededed,
+        2: #e9e9e9,
+        3: #999999,
+        4: #222326,
+        5: rgba(250, 250, 250, 0.1),
+        6: rgba(189, 140, 98, 0.3),
+        7: rgba(227, 227, 227, 0.4),
+    ),
+);

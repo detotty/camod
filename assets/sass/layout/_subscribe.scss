@@ -1,0 +1,32 @@
+@use "../utilities" as *;
+
+/**----------------------------------------
+START: Theme Subscribe CSS
+----------------------------------------*/
+.subscribe-section {
+    .subscribe-contact-form {
+        max-width: 650px;
+        margin: 0 auto;
+        .form-control {
+            background-color: var(--tj-color-theme-bg-dark-2);
+            font-family: var(--tj-ff-body);
+            color: #fff;
+            padding: 15px;
+            letter-spacing: 2px;
+            border: 1px solid var(--tj-color-border-6);
+            margin-bottom: 30px;
+            box-shadow: none;
+            border-radius: 0;
+            @include tp-placeholder {
+                color: var(--tj-color-grey-10);
+            }
+        }
+        .address {
+            height: 120px;
+        }
+        .tj-primary-btn {
+            width: 100%;
+        }
+    }
+}
+/* !END: Theme Subscribe CSS */
